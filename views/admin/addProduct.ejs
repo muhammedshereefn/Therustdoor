@@ -1,0 +1,100 @@
+<%- include ('adminHeader')%>
+
+
+<section class="content-main">
+    <form action="/admin/addproduct" method="post" enctype="multipart/form-data" onsubmit="return validate()">
+        <div class="row">
+            <div class="col-9">
+                <div class="content-header">
+                    <h2 class="content-title">Add New Product</h2>
+                    <div>
+                        <button type="submit" class="btn btn-md rounded font-sm hover-up">Publish</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <label for="product_title" class="form-label">Product title</label>
+                            <input name="name" type="text" placeholder="Type here" class="form-control" id="product_title" >
+                            <p id="nameError"></p>
+                        </div>
+                        <div class="row gx-3">
+                            
+                           
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div>
+                            <label class="form-label">Description</label>
+                            <textarea name="description" placeholder="Type here" class="form-control" rows="4" id="product_description"></textarea>
+                            <p id="descriptionError"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div>
+                            <label class="form-label">Cover Images</label>
+                            <input type="file" accept="image/*" id="images" name="coverimage" multiple>
+                        </div>
+                    </div>
+                    <!-- <div class="card-body"> -->
+                        <!-- <div>
+                            <label class="form-label">Images</label>
+                            <input name="images" class="form-control" type="file" multiple required>
+                        </div> -->
+
+
+                     
+
+
+
+                    <!-- </div> -->
+                </div>
+            </div>
+            <!-- <div class="col-lg-3">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <label class="form-label">Price</label>
+                            <input type="text" name="price" placeholder="Type here" class="form-control">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label">Status</label>
+                            <select class="form-select">
+                                <option>Listed</option> -->
+                               
+
+
+
+                                <div class="col-lg-3">
+                                    <div class="card mb-4">
+                                        <div class="card-body">
+                                            <div class="mb-4">
+                                                <label class="form-label" for="real_price">Price</label>
+                                                <input type="text" name="realPrice" placeholder="Type here" class="form-control" id="real_price">
+                                               
+                                            </div>
+
+                                          
+
+                                           
+
+     
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                           
+                                
+        
+  
+
+    <%- include ('adminFooter')%>   
